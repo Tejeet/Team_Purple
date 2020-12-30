@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Meetly_Clone</string>
+
+    <string name="login">Login</string>
+    <string name="text_English">English</string>
+    <string name="text_hint_Email">Email</string>
+    <string name="text_hint_password">password</string>
+    <string name="text_hint_Repassword">Re-password</string>
+    <string name="btn_text_Register">Register</string>
+    <string name="text_forget_pass">Forget password</string>
+    <string name="text_Meetly">Meetly</string>
+    <string name="text_btn_Loginwithfb">Login with facebook</string>
+    <string name="text_btn_CreateAccount">Create Account</string>
+    <string name="text_dontpost">We don\'t post anything to Facebook.</string>
+    <string name="text_terms">By Signing in,You agree to our <b>Terms of Service</b> and <b>Privacy policy.</b> </string>
+
+</resources>
