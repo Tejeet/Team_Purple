@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/tvIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/icon_heart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvIcon"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/text_Meetly"
+        android:id="@+id/tvMeetly"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/text_English"
+        app:layout_constraintStart_toEndOf="@+id/tvMeetly"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMeetly"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/login"
+        android:textSize="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMeetly"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/tvBackgroundimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvMeetly"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/icon_homepage_promotional" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFacebookbutton"
+        app:layout_constraintTop_toBottomOf="@+id/tvBackgroundimage"
+        android:layout_marginTop="@dimen/dp_55"
+        android:background="@drawable/design_bg_fblogin_btn"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:textStyle="bold"
+        android:text="@string/text_btn_Loginwithfb"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCreateaccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvFacebookbutton"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/design_bg_createaccount_btn"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/text_btn_CreateAccount"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_dontpost"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateaccount"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:id="@+id/tvdontpost"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_terms"
+        app:layout_constraintTop_toBottomOf="@+id/tvdontpost"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:id="@+id/tvterms"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
