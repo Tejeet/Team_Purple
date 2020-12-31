@@ -34,7 +34,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
     public void gotoHome() {
-        startActivity(new Intent(SplashScreen.this, SignupActivity.class));
+        startActivity(new Intent(SplashScreen.this, MainActivity.class));
         finish();
     }
 

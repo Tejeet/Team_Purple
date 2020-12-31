@@ -3,31 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".HomeActivity">
 
     <ImageView
         android:id="@+id/tvIcon"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginLeft="@dimen/dp_20"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/dp_10"
-        android:background="@drawable/icon_heart" />
+        android:background="@drawable/logo_transperent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvMeetly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvIcon"
-        android:layout_marginTop="@dimen/dp_10"
-        app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/text_Meetly"
-        android:id="@+id/tvMeetly"
-        android:textSize="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_20"
-        android:textColor="@color/black" />
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/text_Meetly"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIcon" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,86 +35,93 @@
         android:layout_marginLeft="@dimen/dp_10"
         android:layout_marginTop="@dimen/dp_10"
         android:text="@string/text_English"
-        app:layout_constraintStart_toEndOf="@+id/tvMeetly"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/tvMeetly"
-        android:textColor="@color/black" />
+        app:layout_constraintStart_toEndOf="@+id/tvMeetly" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_10"
         android:layout_marginTop="@dimen/dp_20"
-        android:text="@string/login"
-        android:textSize="@dimen/dp_20"
         android:layout_marginRight="@dimen/dp_30"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/dp_20"
         app:layout_constraintBottom_toBottomOf="@+id/tvMeetly"
-        android:textColor="@color/black" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/tvBackgroundimage"
-        app:layout_constraintTop_toBottomOf="@+id/tvMeetly"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginStart="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_20"
         android:layout_marginEnd="@dimen/dp_20"
-        android:layout_marginStart="@dimen/dp_20"
+        android:background="@drawable/icon_homepage_promotional"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/icon_homepage_promotional" />
+        app:layout_constraintTop_toBottomOf="@+id/tvMeetly" />
 
     <Button
+        android:id="@+id/btnFacebookbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvFacebookbutton"
-        app:layout_constraintTop_toBottomOf="@+id/tvBackgroundimage"
-        android:layout_marginTop="@dimen/dp_55"
-        android:background="@drawable/design_bg_fblogin_btn"
-        android:layout_marginRight="@dimen/dp_30"
         android:layout_marginLeft="@dimen/dp_30"
-        android:textStyle="bold"
-        android:text="@string/text_btn_Loginwithfb"
-        android:textAllCaps="false"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCreateaccount"
-        app:layout_constraintTop_toBottomOf="@+id/tvFacebookbutton"
-        android:layout_marginTop="@dimen/dp_20"
-        android:background="@drawable/design_bg_createaccount_btn"
+        android:layout_marginTop="@dimen/dp_50"
         android:layout_marginRight="@dimen/dp_30"
-        android:layout_marginLeft="@dimen/dp_30"
-        android:textStyle="bold"
+        android:drawablePadding="@dimen/dp_08"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
         android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_fb_24"
+        android:background="@drawable/design_bg_fblogin_btn"
+        android:text="@string/text_btn_Loginwithfb"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvBackgroundimage" />
+
+    <Button
+        android:id="@+id/btnCreateaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@drawable/design_bg_createaccount_btn"
         android:text="@string/text_btn_CreateAccount"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookbutton" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_dontpost"
-        app:layout_constraintTop_toBottomOf="@+id/tvCreateaccount"
-        android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"
         android:id="@+id/tvdontpost"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/dp_20"/>
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_terms"
-        app:layout_constraintTop_toBottomOf="@+id/tvdontpost"
         android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
         android:layout_marginRight="@dimen/dp_20"
-        android:id="@+id/tvterms"
-        android:textColor="@color/black"
+        android:textSize="@dimen/sp_15"
         android:gravity="center"
-        android:layout_marginTop="@dimen/dp_10"/>
+        android:text="@string/text_dontpost"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateaccount" />
 
-
+    <TextView
+        android:id="@+id/tvterms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:gravity="center"
+        android:text="@string/text_terms"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tvdontpost" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

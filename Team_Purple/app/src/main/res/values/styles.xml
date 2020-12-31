@@ -25,4 +25,32 @@
 
     </style>
 
+
+    <style name="coinBackground">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/goldenCoin</item>
+        <item name="android:padding">@dimen/dp_05</item>
+        <item name="android:background">@drawable/design_bg_coin_text</item>
+
+    </style>
+
+
+    <style name="topactionmenustyle">
+
+        <item name="android:layout_width">@dimen/dp_40</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:layout_margin">@dimen/dp_08</item>
+
+    </style>
+
+    <style name="bottomnavStyle">
+
+        <item name="android:layout_width">@dimen/dp_35</item>
+        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:layout_margin">@dimen/dp_16</item>
+
+    </style>
+
 </resources>

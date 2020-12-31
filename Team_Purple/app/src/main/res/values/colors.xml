@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#DD5863</color>
+    <color name="primary">#FC486F</color>
     <color name="colorPrimaryDark">#E86D52</color>
     <color name="colorAccent">#FFFFFF</color>
+
+
+    <color name="input_form_bg">#F5F5F5</color>
+    <color name="input_form_border">#F5F5F5</color>
+
+    <color name="goldenCoin">#FAA93E</color>
+
+    <color name="facebook_blue">#39559F</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
