@@ -7,12 +7,25 @@
     <string name="text_hint_password">Password</string>
     <string name="text_hint_Repassword">Re-Password</string>
     <string name="btn_text_Register">Register</string>
+    <string name="text_register">Register</string>
     <string name="text_forget_pass">Forget password</string>
     <string name="text_Meetly">Meetly</string>
     <string name="text_btn_Loginwithfb">Login with facebook</string>
     <string name="text_btn_CreateAccount">Create Account</string>
     <string name="text_dontpost">We don\'t post anything to Facebook.</string>
     <string name="text_terms">By Signing in,You agree to our <b>Terms of Service</b> and <b>Privacy policy.</b> </string>
-    <string name="text_register">Register</string>
+    <string name="text_Community">Community</string>
+    <string name="text_CommunityGuidelines">Community Guidelines</string>
+    <string name="text_SafetyTips">Safety Tips</string>
+    <string name="text_Legal">Legal</string>
+    <string name="text_PrivacyPolicy">Privacy Policy</string>
+    <string name="text_Licenses">Licenses</string>
+    <string name="text_Termsofservice">Terms of service</string>
+    <string name="text_SelectLanguage">Select language</string>
+    <string name="text_Logout">Logout</string>
+    <string name="text_Deleteaccount">Delete account</string>
+    <string name="text_AppSetting">App setting</string>
+
+
 
 </resources>
