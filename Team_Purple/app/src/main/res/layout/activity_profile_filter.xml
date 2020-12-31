@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvToolBarTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingTop="@dimen/dp_20"
+        android:text="Discovery Settings"
+        android:padding="@dimen/dp_20"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_12"
+        android:background="@drawable/ic_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLocation"
+        android:padding="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvToolBarTitle"
+        android:layout_margin="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_30"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/locationText"
+                android:textSize="@dimen/sp_15"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Natepute,Maharashtra,India"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:id="@+id/tvDistanceText"
+        android:textSize="@dimen/dp_30"
+        android:textColor="@color/black"
+        android:text="Distance"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDistanceMeter"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistanceText"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:text="200 KM" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/distanceSeekbar"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:max="200"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDistanceMeter"/>
+
+    <ToggleButton
+        android:id="@+id/toggleDistButton"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:textOff="km"
+        android:textOn="mi"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="@id/tvDistanceText"
+        app:layout_constraintRight_toRightOf="@id/distanceSeekbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/distanceSeekbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:id="@+id/tvAge"
+        android:textSize="@dimen/dp_30"
+        android:textColor="@color/black"
+        android:text="Age"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMinAge"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:textColor="@color/black"
+        android:text="18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAgeDash"
+        app:layout_constraintLeft_toRightOf="@+id/tvMinAge"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        android:textColor="@color/black"
+        android:text="-" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMaxAge"
+        app:layout_constraintLeft_toRightOf="@+id/tvAgeDash"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        android:textColor="@color/black"
+        android:text="60" />
+
+    <org.florescu.android.rangeseekbar.RangeSeekBar
+        android:id="@+id/ageSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvMinAge"
+        app:absoluteMinValue="18"
+        app:absoluteMaxValue="60"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbGender"
+        android:padding="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageSeekbar"
+        android:layout_margin="@dimen/dp_30">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_30"
+            android:background="@drawable/rectangle"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:id="@+id/genderText"
+                android:textSize="@dimen/sp_15"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@color/black"
+                android:paddingBottom="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/dp_30"
+        android:background="@drawable/rectangle"
+        android:text="Apply Filter"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
