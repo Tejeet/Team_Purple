@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imgSetting"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/ic_setting_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/dp_16"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgprofilephoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profile_1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgSetting"
+        app:civ_border_width="@dimen/dp_05"
+        app:civ_border_color="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/tvprofilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tejeet"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgprofilephoto"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/dp_08"
+        />
+
+    <TextView
+        android:id="@+id/tveditprodile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textColor="@color/primary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvprofilename"
+        android:layout_margin="@dimen/dp_10"
+        />
+
+    <Button
+        android:id="@+id/btngetpremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Premium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:paddingLeft="@dimen/dp_50"
+        android:paddingRight="@dimen/dp_50"
+        app:layout_constraintTop_toBottomOf="@id/tveditprodile"
+        android:background="@drawable/design_bg_createaccount_btn"
+        android:layout_margin="@dimen/dp_16"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btngetpremium"
+        android:weightSum="5"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_08"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Likes"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_08"
+                android:background="@drawable/design_bg_circle_shape"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:src="@drawable/ic_heart"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="@dimen/dp_05"
+                    />
+
+                <TextView
+                    android:layout_width="29dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Passed"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_08"
+                android:background="@drawable/design_bg_circle_shape"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:src="@drawable/ic_heart"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="@dimen/dp_05"
+                    />
+
+                <TextView
+                    android:layout_width="29dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Liked By"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_08"
+                android:background="@drawable/design_bg_circle_shape"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:src="@drawable/ic_heart"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="@dimen/dp_05"
+                    />
+
+                <TextView
+                    android:layout_width="29dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitors"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_08"
+                android:background="@drawable/design_bg_circle_shape"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:src="@drawable/ic_heart"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="@dimen/dp_05"
+                    />
+
+                <TextView
+                    android:layout_width="29dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Super Like"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp_08"
+                android:background="@drawable/design_bg_circle_shape"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:src="@drawable/ic_heart"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="@dimen/dp_05"
+                    />
+
+                <TextView
+                    android:layout_width="29dp"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="bottom|center"
+                    android:gravity="center"
+                    android:text="0" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btninvitefriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnneedhelp"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/design_bg_edi_text_signupform"
+        android:text="Invite Friends"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btnneedhelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/imgbottomnavsearch"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/design_bg_edi_text_signupform"
+        android:text="Need help ?"
+        android:textAllCaps="false"
+        />
+
+
+
+
+    <ImageView
+        android:id="@+id/imgbottomnavsearch"
+        style="@style/bottomnavStyle"
+        android:src="@drawable/ic_bottom_nav_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown"
+        />
+
+    <ImageView
+        android:id="@+id/imgbottomnavcrown"
+        style="@style/bottomnavStyle"
+        android:src="@drawable/ic_bottom_nav_crown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgbottomnavchat"
+        app:layout_constraintStart_toEndOf="@+id/imgbottomnavsearch" />
+
+    <ImageView
+        android:id="@+id/imgbottomnavchat"
+        style="@style/bottomnavStyle"
+        android:src="@drawable/ic_bottom_nav_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgbottomnavcrown"
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavshare" />
+
+    <ImageView
+        android:id="@+id/imgbottomnavshare"
+        style="@style/bottomnavStyle"
+        android:src="@drawable/ic_bottom_nav_share"
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavuser"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgbottomnavchat"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+    <ImageView
+        android:id="@+id/imgbottomnavuser"
+        style="@style/bottomnavStyle"
+        android:src="@drawable/ic_bottom_nav_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
