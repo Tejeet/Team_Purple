@@ -1,5 +1,5 @@
 # Team_Purple
-We are cloning the Meetly app
+We are cloning the Meetly app ![Meetly App](https://tejeet.com/shared/meetlyclone/logo.png)
 
 Team Members 
 - Tejeet Magar
