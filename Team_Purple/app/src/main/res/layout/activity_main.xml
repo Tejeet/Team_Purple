@@ -100,6 +100,33 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:id="@+id/llLikeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imguserProfile"
+        app:layout_constraintBottom_toTopOf="@id/imgbottomnavsearch"
+        android:layout_margin="@dimen/dp_16"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="@dimen/dp_10">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lotliketype"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/radarscan" />
+
+
+    </LinearLayout>
+
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/swipecard"
@@ -194,6 +221,7 @@
                         />
 
                     <ImageView
+                        android:id="@+id/imgSuperLike"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

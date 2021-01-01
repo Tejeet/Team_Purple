@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.tejeet.meetly_clone.Data.SuggestedProfileData;
 
 import java.util.ArrayList;
@@ -20,10 +21,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ImageView mSearchNav, mPromotionalNav, mHotmeetNav, mChatNav, mUserNav, mMenuFilter;
-    private ImageView mBuyCoin, mLike, mDisLike, mProfilePhoto;
-    private LinearLayout mRadar;
+    private ImageView mBuyCoin, mLike, mSuperLike, mDisLike, mProfilePhoto;
+    private LinearLayout mRadar, mLikeView;
     private CardView mSwipeView;
     private TextView mProfileName, mProfileDistance;
+    private LottieAnimationView mLikeType;
 
     private static final String TAG = "tag";
 
@@ -53,12 +55,15 @@ public class MainActivity extends AppCompatActivity {
 
         mProfilePhoto = findViewById(R.id.imgsuggestedprofile);
         mLike = findViewById(R.id.imgLike);
+        mSuperLike = findViewById(R.id.imgSuperLike);
         mDisLike = findViewById(R.id.imgdisLike);
         mProfileName = findViewById(R.id.tvprofilename);
         mProfileDistance = findViewById(R.id.tvprofiledistance);
 
         mRadar = findViewById(R.id.llradarscan);
+        mLikeView = findViewById(R.id.llLikeView);
         mSwipeView = findViewById(R.id.swipecard);
+        mLikeType = findViewById(R.id.lotliketype);
 
 
         arraylist.add(new SuggestedProfileData(R.drawable.profile_1, "Snehal", "23", 10));
@@ -81,6 +86,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        mSwipeView.setVisibility(View.GONE);
+        mRadar.setVisibility(View.VISIBLE);
+        mLikeView.setVisibility(View.GONE);
+
+
+        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                mSwipeView.setVisibility(View.VISIBLE);
+                mRadar.setVisibility(View.GONE);
+            }
+        }, 2000);
 
         SuggestedProfileData spd = (SuggestedProfileData) arraylist.get((int) ((Math.random() * (arraylist.size() - 0)) + 0));
         Log.d(TAG, "name is "+spd.getName());
@@ -94,13 +111,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                int index = (int) ((Math.random() * (arraylist.size() - 0)) + 0);
 
-                SuggestedProfileData spd = (SuggestedProfileData) arraylist.get(index);
-                Log.d(TAG, "name is "+spd.getName());
-                mProfilePhoto.setImageResource(spd.getMpath());
-                mProfileDistance.setText(spd.getDistance()+" Km");
-                mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+                mLikeType.setAnimation(R.raw.heartlike);
+                mLikeView.setVisibility(View.VISIBLE);
+
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mLikeView.setVisibility(View.GONE);
+
+                        int index = (int) ((Math.random() * (arraylist.size() - 0)) + 0);
+
+                        SuggestedProfileData spd = (SuggestedProfileData) arraylist.get(index);
+                        Log.d(TAG, "name is "+spd.getName());
+                        mProfilePhoto.setImageResource(spd.getMpath());
+                        mProfileDistance.setText(spd.getDistance()+" Km");
+                        mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+                    }
+                }, 1500);
+
+
             }
         });
 
@@ -121,32 +151,54 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                int index = (int) ((Math.random() * (arraylist.size() - 0)) + 0);
+                mLikeType.setAnimation(R.raw.donotshow);
+                mLikeView.setVisibility(View.VISIBLE);
 
-                SuggestedProfileData spd = (SuggestedProfileData) arraylist.get(index);
-                Log.d(TAG, "name is "+spd.getName());
-                mProfilePhoto.setImageResource(spd.getMpath());
-                mProfileDistance.setText(spd.getDistance()+" Km");
-                mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mLikeView.setVisibility(View.GONE);
+
+                        int index = (int) ((Math.random() * (arraylist.size() - 0)) + 0);
+
+                        SuggestedProfileData spd = (SuggestedProfileData) arraylist.get(index);
+                        Log.d(TAG, "name is "+spd.getName());
+                        mProfilePhoto.setImageResource(spd.getMpath());
+                        mProfileDistance.setText(spd.getDistance()+" Km");
+                        mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+                    }
+                }, 1500);
             }
         });
 
 
-
-
-
-
-        mSwipeView.setVisibility(View.GONE);
-        mRadar.setVisibility(View.VISIBLE);
-
-
-        new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+        mSuperLike.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                mSwipeView.setVisibility(View.VISIBLE);
-                mRadar.setVisibility(View.GONE);
+            public void onClick(View view) {
+
+
+                mLikeType.setAnimation(R.raw.superlike);
+                mLikeView.setVisibility(View.VISIBLE);
+
+                new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        mLikeView.setVisibility(View.GONE);
+
+                        int index = (int) ((Math.random() * (arraylist.size() - 0)) + 0);
+
+                        SuggestedProfileData spd = (SuggestedProfileData) arraylist.get(index);
+                        Log.d(TAG, "name is "+spd.getName());
+                        mProfilePhoto.setImageResource(spd.getMpath());
+                        mProfileDistance.setText(spd.getDistance()+" Km");
+                        mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+                    }
+                }, 1500);
+
+
             }
-        }, 2000);
+        });
+
 
 
 

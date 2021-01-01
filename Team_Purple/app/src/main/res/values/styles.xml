@@ -47,8 +47,8 @@
 
     <style name="bottomnavStyle">
 
-        <item name="android:layout_width">@dimen/dp_35</item>
-        <item name="android:layout_height">@dimen/dp_35</item>
+        <item name="android:layout_width">@dimen/dp_30</item>
+        <item name="android:layout_height">@dimen/dp_30</item>
         <item name="android:layout_margin">@dimen/dp_16</item>
 
     </style>
