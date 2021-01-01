@@ -13,3 +13,7 @@ We are cloning this app Meetly
 - Original App
 
 ![Farmers Market Finder Demo](example/originalapp.gif)
+
+- Cloned App
+
+![Farmers Market Finder Demo](example/cloneapp.gif)
