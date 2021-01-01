@@ -8,10 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.tejeet.meetly_clone.Data.Constants;
+
 public class LoginActivity extends AppCompatActivity {
 
     private TextView mRegister;
     private Button mFacebook, mLogin;
+
+    private Constants cn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,8 @@ public class LoginActivity extends AppCompatActivity {
         mRegister = findViewById(R.id.tvRegister);
         mFacebook = findViewById(R.id.btnFacebooklogin);
         mLogin = findViewById(R.id.btnLoginbutton);
+
+        cn = new Constants();
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,8 +45,12 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 gotoLogin();
+                cn.setLoginStatus(LoginActivity.this, "1");
             }
         });
+
+
+
 
     }
 

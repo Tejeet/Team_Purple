@@ -16,19 +16,17 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-//        cn = new Constants();
-//
-//        String loginStatus = cn.getLoginStatus(this);
-//
-//        if (loginStatus.equals("1")){
-//            gotoDashboard();
-//        }
-//        else {
-//            gotoLoginScreen();
-//        }                         i will re comment this once i teach you shared pref
+        cn = new Constants();
 
+        String loginStatus = cn.getLoginStatus(this);
 
-        gotoHome();
+        if (loginStatus.equals("1")){
+            gotoDashboard();
+        }
+        else {
+            gotoHome();
+        }
+
 
     }
 

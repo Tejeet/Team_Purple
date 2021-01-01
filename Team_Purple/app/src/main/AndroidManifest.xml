@@ -9,9 +9,15 @@
         android:roundIcon="@drawable/launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Meetly_Clone">
-        <activity android:name=".Licence_Activity"></activity>
-        <activity android:name=".Safety_Tips_Activity" />
-        <activity android:name=".Community_Guidelines_Activity" />
+        <activity
+            android:name=".Licence_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Safety_Tips_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Community_Guidelines_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".Buy_coins_Activity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />

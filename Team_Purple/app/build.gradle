@@ -36,9 +36,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'  // Circular Image View
 
-    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'
+    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.3.0'  // Seek Bar Dependency Added by Madhuri Patel
+
+    def lottieVersion = '3.4.4'
+    implementation "com.airbnb.android:lottie:$lottieVersion"    // lottie animation
 
 
 }
