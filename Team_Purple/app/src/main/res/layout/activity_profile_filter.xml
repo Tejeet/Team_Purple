@@ -22,7 +22,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -33,7 +33,7 @@
         android:paddingBottom="@dimen/dp_12"
         android:background="@drawable/ic_arrow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -51,13 +51,14 @@
             android:paddingLeft="@dimen/dp_30"
             android:background="@drawable/rectangle"
             android:orientation="vertical">
+
             <TextView
                 android:paddingTop="@dimen/dp_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Location"
                 android:id="@+id/locationText"
-                android:textSize="@dimen/sp_15"/>
+                android:textSize="@dimen/sp_15" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -65,7 +66,7 @@
                 android:text="Natepute,Maharashtra,India"
                 android:textColor="@color/black"
                 android:paddingBottom="@dimen/dp_10"
-                android:textSize="@dimen/sp_20"/>
+                android:textSize="@dimen/sp_20" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -79,7 +80,7 @@
         android:id="@+id/tvDistanceText"
         android:textSize="@dimen/dp_30"
         android:textColor="@color/black"
-        android:text="Distance"/>
+        android:text="Distance" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -99,7 +100,7 @@
         android:layout_marginRight="@dimen/dp_30"
         android:max="200"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDistanceMeter"/>
+        app:layout_constraintTop_toBottomOf="@id/tvDistanceMeter" />
 
     <ToggleButton
         android:id="@+id/toggleDistButton"
@@ -109,7 +110,7 @@
         android:textOn="mi"
         android:textAllCaps="false"
         app:layout_constraintTop_toTopOf="@id/tvDistanceText"
-        app:layout_constraintRight_toRightOf="@id/distanceSeekbar"/>
+        app:layout_constraintRight_toRightOf="@id/distanceSeekbar" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -121,7 +122,7 @@
         android:id="@+id/tvAge"
         android:textSize="@dimen/dp_30"
         android:textColor="@color/black"
-        android:text="Age"/>
+        android:text="Age" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -159,7 +160,7 @@
         app:absoluteMinValue="18"
         app:absoluteMaxValue="60"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"/>
+        android:layout_marginRight="10dp" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -177,13 +178,14 @@
             android:paddingLeft="@dimen/dp_30"
             android:background="@drawable/rectangle"
             android:orientation="vertical">
+
             <TextView
                 android:paddingTop="@dimen/dp_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gender"
                 android:id="@+id/genderText"
-                android:textSize="@dimen/sp_15"/>
+                android:textSize="@dimen/sp_15" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -191,7 +193,7 @@
                 android:text="Female"
                 android:textColor="@color/black"
                 android:paddingBottom="@dimen/dp_10"
-                android:textSize="@dimen/sp_20"/>
+                android:textSize="@dimen/sp_20" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -203,7 +205,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="@dimen/dp_30"
         android:background="@drawable/rectangle"
-        android:text="Apply Filter"/>
+        android:text="Apply Filter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

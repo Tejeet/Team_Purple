@@ -22,7 +22,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -33,7 +33,7 @@
         android:paddingBottom="@dimen/dp_12"
         android:background="@drawable/ic_arrow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:textSize="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_40"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <ImageView
         android:id="@+id/arrow1"
@@ -68,8 +68,7 @@
         android:background="@drawable/ic_arrow1"
         app:layout_constraintTop_toTopOf="@+id/tvCoummnityguidelines"
         app:layout_constraintBottom_toBottomOf="@+id/tvCoummnityguidelines"
-        app:layout_constraintEnd_toEndOf="@+id/tvCoummnityguidelines"/>
-
+        app:layout_constraintEnd_toEndOf="@+id/tvCoummnityguidelines" />
 
 
     <Button
@@ -84,7 +83,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <TextView
         android:id="@+id/tvLegal"
@@ -95,7 +94,7 @@
         android:textSize="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -109,7 +108,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -123,9 +122,9 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
-        <Button
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvLiceness"
@@ -137,7 +136,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <TextView
         android:layout_width="match_parent"
@@ -148,7 +147,7 @@
         android:textSize="@dimen/dp_20"
         android:layout_marginTop="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -162,7 +161,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -176,7 +175,7 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
     <Button
         android:layout_width="match_parent"
@@ -190,6 +189,6 @@
         android:layout_marginTop="@dimen/dp_10"
         android:background="@drawable/rectangle"
         android:layout_marginLeft="@dimen/dp_20"
-        android:layout_marginRight="@dimen/dp_20"/>
+        android:layout_marginRight="@dimen/dp_20" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

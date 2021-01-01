@@ -7,7 +7,7 @@
         <item name="colorAccent">@color/health</item>
     </style>
 
-    <style name="SplashScreenTheme" parent = "Theme.AppCompat.NoActionBar">
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_screen_background</item>
     </style>
 
@@ -35,10 +35,6 @@
         <item name="android:background">@drawable/design_bg_coin_text</item>
 
     </style>
-
-
-
-
 
 
     <style name="topactionmenustyle">

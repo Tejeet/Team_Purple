@@ -25,7 +25,7 @@ public class SplashScreen extends AppCompatActivity {
 //        }
 //        else {
 //            gotoLoginScreen();
-//        }                         i will recomment this once i teach you shared pref
+//        }                         i will re comment this once i teach you shared pref
 
 
         gotoHome();
@@ -34,7 +34,7 @@ public class SplashScreen extends AppCompatActivity {
 
 
     public void gotoHome() {
-        startActivity(new Intent(SplashScreen.this, LoginActivity.class));
+        startActivity(new Intent(SplashScreen.this, HomeActivity.class));
         finish();
     }
 

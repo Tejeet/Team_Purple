@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button mFbLogin, mCreteAccount;
+    private TextView mLogin;
+    private Button mFacebook, mSignup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,20 +19,46 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
 
-        mCreteAccount = findViewById(R.id.btnCreateaccount);
+        mLogin = findViewById(R.id.tvLogin);
+        mFacebook = findViewById(R.id.btnFacebookbutton);
+        mSignup = findViewById(R.id.btnCreateaccount);
 
-        mCreteAccount.setOnClickListener(new View.OnClickListener() {
+
+
+        mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                gotoCreateAccount();
+                gotoLogin();
+            }
+        });
+
+        mFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotosignup();
+            }
+        });
+        mSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotosignup();
             }
         });
 
 
-
     }
 
-    public void gotoCreateAccount() {
+    public void gotoLogin() {
+        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+        finish();
+    }
+
+    public void gotofacebooklogin() {
+        startActivity(new Intent(HomeActivity.this, SignupActivity.class));
+        finish();
+    }
+
+    public void gotosignup() {
         startActivity(new Intent(HomeActivity.this, SignupActivity.class));
         finish();
     }

@@ -37,8 +37,7 @@
         android:textStyle="bold"
         android:layout_marginRight="@dimen/dp_10"
         app:layout_constraintBottom_toBottomOf="@id/imguserProfile"
-        style="@style/coinBackground"
-        />
+        style="@style/coinBackground" />
 
 
     <ImageView
@@ -49,8 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:src="@drawable/network_issue"
         app:layout_constraintTop_toBottomOf="@id/imguserProfile"
-        app:layout_constraintBottom_toTopOf="@id/imgbottomnavsearch"
-        />
+        app:layout_constraintBottom_toTopOf="@id/imgbottomnavsearch" />
 
     <TextView
         android:id="@+id/tvnetworkerror"
@@ -61,8 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgnetworkIssue"
         android:gravity="center"
-        android:layout_marginTop="@dimen/dp_10"
-        />
+        android:layout_marginTop="@dimen/dp_10" />
 
     <TextView
         android:id="@+id/tvretryNetwork"
@@ -75,9 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvnetworkerror"
         android:gravity="center"
-        android:layout_marginTop="@dimen/dp_10"
-        />
-
+        android:layout_marginTop="@dimen/dp_10" />
 
 
     <ImageView
@@ -86,8 +81,7 @@
         android:src="@drawable/ic_bottom_nav_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown"
-        />
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown" />
 
     <ImageView
         android:id="@+id/imgbottomnavcrown"
@@ -112,8 +106,7 @@
         app:layout_constraintEnd_toStartOf="@id/imgbottomnavuser"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/imgbottomnavchat"
-        app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintHorizontal_bias="0.91" />
 
     <ImageView
         android:id="@+id/imgbottomnavuser"
@@ -121,7 +114,6 @@
         android:src="@drawable/ic_bottom_nav_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintHorizontal_bias="0.91" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

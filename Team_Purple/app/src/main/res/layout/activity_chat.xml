@@ -28,16 +28,15 @@
 
     <TextView
         android:id="@+id/tvcoinBalance"
-        android:text="0"
-        app:layout_constraintStart_toStartOf="@id/imgcoinBalance"
-        app:layout_constraintTop_toTopOf="parent"
+        style="@style/coinBackground"
+        android:layout_marginRight="@dimen/dp_10"
         android:paddingStart="@dimen/dp_40"
         android:paddingEnd="@dimen/dp_10"
+        android:text="0"
         android:textStyle="bold"
-        android:layout_marginRight="@dimen/dp_10"
         app:layout_constraintBottom_toBottomOf="@id/imguserProfile"
-        style="@style/coinBackground"
-        />
+        app:layout_constraintStart_toStartOf="@id/imgcoinBalance"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvactivechartitle"
@@ -56,98 +55,88 @@
         android:id="@+id/llchatrow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvactivechartitle"
-        android:orientation="horizontal"
         android:layout_marginTop="@dimen/dp_16"
+        android:orientation="horizontal"
         android:weightSum="10"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvactivechartitle">
 
+
+        r
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="0dp"
-            android:layout_weight="2"
             android:layout_height="60dp"
-            android:src="@drawable/chat_profile"
             android:layout_gravity="center"
-            app:civ_border_width="@dimen/dp_05"
+            android:layout_weight="2"
+            android:src="@drawable/chat_profile"
             app:civ_border_color="@color/goldenCoin"
-            app:civ_border_overlay="true"
-            />
+            app:civ_border_width="2dp" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="5"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_gravity="center"
-            android:orientation="vertical" >
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="start"
                 android:text="Snehal"
-                android:gravity="start"
-                android:textStyle="bold"
                 android:textSize="@dimen/sp_20"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="lets meet for coffie"
                 android:gravity="start"
-                android:textStyle="italic"
-                />
+                android:text="lets meet for coffie"
+                android:textStyle="italic" />
 
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="3"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_gravity="center"
-            android:orientation="vertical" >
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Yesterday"
                 android:textColor="@color/grey"
-                android:gravity="center"
-                android:textStyle="bold"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/grey"
-                android:text="2:23 PM"
                 android:gravity="center"
-                android:textStyle="italic"
-                />
+                android:text="2:23 PM"
+                android:textColor="@color/grey"
+                android:textStyle="italic" />
 
         </LinearLayout>
-
 
 
     </LinearLayout>
-
-
-
 
 
     <ImageView
         android:id="@+id/imgbottomnavsearch"
         style="@style/bottomnavStyle"
         android:src="@drawable/ic_bottom_nav_search"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imgbottomnavcrown"
@@ -162,26 +151,24 @@
         style="@style/bottomnavStyle"
         android:src="@drawable/ic_bottom_nav_chat"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imgbottomnavcrown"
-        app:layout_constraintEnd_toStartOf="@id/imgbottomnavshare" />
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavshare"
+        app:layout_constraintStart_toEndOf="@id/imgbottomnavcrown" />
 
     <ImageView
         android:id="@+id/imgbottomnavshare"
         style="@style/bottomnavStyle"
         android:src="@drawable/ic_bottom_nav_share"
-        app:layout_constraintEnd_toStartOf="@id/imgbottomnavuser"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imgbottomnavchat"
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavuser"
         app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintStart_toEndOf="@id/imgbottomnavchat" />
 
     <ImageView
         android:id="@+id/imgbottomnavuser"
         style="@style/bottomnavStyle"
         android:src="@drawable/ic_bottom_nav_user"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

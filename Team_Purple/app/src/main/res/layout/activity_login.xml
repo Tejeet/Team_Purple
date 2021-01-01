@@ -42,7 +42,7 @@
         app:layout_constraintStart_toEndOf="@+id/tvMeetlytitle" />
 
     <TextView
-        android:id="@+id/tvLogin"
+        android:id="@+id/tvRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
@@ -72,7 +72,7 @@
 
 
     <Button
-        android:id="@+id/tvRegisterbutton"
+        android:id="@+id/tvLoginbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_30"

@@ -9,16 +9,61 @@
         android:roundIcon="@drawable/launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Meetly_Clone">
-        <activity android:name=".HomeActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
-        <activity android:name=".SignupActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-        </activity>
-        <activity android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
+
+
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".ForgotpassActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".HotMeetActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".PrivacyAndPolicyActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".ProfileFilterActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".PromotionsActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+        <activity
+            android:name=".TermsAndServiceActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashScreenTheme">
@@ -28,9 +73,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            />
+
+
+
     </application>
 
 </manifest>

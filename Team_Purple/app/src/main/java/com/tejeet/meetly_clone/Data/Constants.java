@@ -17,14 +17,12 @@ public class Constants {
     private static final String LOGIN_STATUS_KEY = "LoginStatus";
 
 
-
-
-    public String getLoginStatus(Context context){
+    public String getLoginStatus(Context context) {
         sharedpreferences = context.getSharedPreferences(MY_PREF, Context.MODE_PRIVATE);
         return sharedpreferences.getString(LOGIN_STATUS_KEY, "0");
     }
 
-    public void setLoginStatus(Context context,String loginStatus) {
+    public void setLoginStatus(Context context, String loginStatus) {
         sharedpreferences = context.getSharedPreferences(MY_PREF, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedpreferences.edit();
         editor.putString(LOGIN_STATUS_KEY, loginStatus);

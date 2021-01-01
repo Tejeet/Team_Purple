@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,13 +8,12 @@
 
     <ImageView
         android:id="@+id/imgSetting"
-        android:layout_width="@dimen/dp_50"
-        android:layout_height="@dimen/dp_50"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
         android:src="@drawable/ic_setting_round"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="@dimen/dp_16"
-        />
+        android:layout_margin="@dimen/dp_16" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgprofilephoto"
@@ -27,8 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgSetting"
         app:civ_border_width="@dimen/dp_05"
-        app:civ_border_color="@color/grey"
-        />
+        app:civ_border_color="@color/grey" />
 
     <TextView
         android:id="@+id/tvprofilename"
@@ -41,8 +38,7 @@
         app:layout_constraintTop_toBottomOf="@id/imgprofilephoto"
         android:textSize="@dimen/sp_20"
         android:textStyle="bold"
-        android:layout_margin="@dimen/dp_08"
-        />
+        android:layout_margin="@dimen/dp_08" />
 
     <TextView
         android:id="@+id/tveditprodile"
@@ -53,8 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvprofilename"
-        android:layout_margin="@dimen/dp_10"
-        />
+        android:layout_margin="@dimen/dp_10" />
 
     <Button
         android:id="@+id/btngetpremium"
@@ -70,8 +65,7 @@
         android:paddingRight="@dimen/dp_50"
         app:layout_constraintTop_toBottomOf="@id/tveditprodile"
         android:background="@drawable/design_bg_createaccount_btn"
-        android:layout_margin="@dimen/dp_16"
-        />
+        android:layout_margin="@dimen/dp_16" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,23 +76,21 @@
         app:layout_constraintTop_toBottomOf="@id/btngetpremium"
         android:weightSum="5"
         android:gravity="center"
-        android:layout_margin="@dimen/dp_08"
-        >
+        android:layout_margin="@dimen/dp_08">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="My Likes"
                 android:layout_gravity="center"
-                android:gravity="center"
-                />
+                android:gravity="center" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,16 +98,14 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/dp_08"
-                android:background="@drawable/design_bg_circle_shape"
-                >
+                android:background="@drawable/design_bg_circle_shape">
 
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
                     android:src="@drawable/ic_heart"
                     android:layout_gravity="top|center"
-                    android:layout_marginTop="@dimen/dp_05"
-                    />
+                    android:layout_marginTop="@dimen/dp_05" />
 
                 <TextView
                     android:layout_width="29dp"
@@ -131,16 +121,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Passed"
+                android:text="Passed by"
                 android:layout_gravity="center"
-                android:gravity="center"
-                />
+                android:gravity="center" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -148,16 +137,14 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/dp_08"
-                android:background="@drawable/design_bg_circle_shape"
-                >
+                android:background="@drawable/design_bg_circle_shape">
 
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@drawable/ic_heart"
+                    android:src="@drawable/ic_passed"
                     android:layout_gravity="top|center"
-                    android:layout_marginTop="@dimen/dp_05"
-                    />
+                    android:layout_marginTop="@dimen/dp_05" />
 
                 <TextView
                     android:layout_width="29dp"
@@ -173,16 +160,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Liked By"
                 android:layout_gravity="center"
-                android:gravity="center"
-                />
+                android:gravity="center" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -190,16 +176,14 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/dp_08"
-                android:background="@drawable/design_bg_circle_shape"
-                >
+                android:background="@drawable/design_bg_circle_shape">
 
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@drawable/ic_heart"
+                    android:src="@drawable/ic_likedby"
                     android:layout_gravity="top|center"
-                    android:layout_marginTop="@dimen/dp_05"
-                    />
+                    android:layout_marginTop="@dimen/dp_05" />
 
                 <TextView
                     android:layout_width="29dp"
@@ -215,16 +199,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Visitors"
                 android:layout_gravity="center"
-                android:gravity="center"
-                />
+                android:gravity="center" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -232,16 +215,14 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/dp_08"
-                android:background="@drawable/design_bg_circle_shape"
-                >
+                android:background="@drawable/design_bg_circle_shape">
 
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@drawable/ic_heart"
+                    android:src="@drawable/ic_view"
                     android:layout_gravity="top|center"
-                    android:layout_marginTop="@dimen/dp_05"
-                    />
+                    android:layout_marginTop="@dimen/dp_05" />
 
                 <TextView
                     android:layout_width="29dp"
@@ -257,16 +238,15 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight="1"
-            >
+            android:layout_weight="1">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Super Like"
                 android:layout_gravity="center"
-                android:gravity="center"
-                />
+                android:gravity="center" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -274,16 +254,14 @@
                 android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/dp_08"
-                android:background="@drawable/design_bg_circle_shape"
-                >
+                android:background="@drawable/design_bg_circle_shape">
 
                 <ImageView
                     android:layout_width="@dimen/dp_30"
                     android:layout_height="@dimen/dp_30"
-                    android:src="@drawable/ic_heart"
+                    android:src="@drawable/ic_superlike"
                     android:layout_gravity="top|center"
-                    android:layout_marginTop="@dimen/dp_05"
-                    />
+                    android:layout_marginTop="@dimen/dp_05" />
 
                 <TextView
                     android:layout_width="29dp"
@@ -294,7 +272,6 @@
 
             </LinearLayout>
         </LinearLayout>
-
 
 
     </LinearLayout>
@@ -308,10 +285,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnneedhelp"
         android:layout_margin="@dimen/dp_16"
-        android:background="@drawable/design_bg_edi_text_signupform"
+        android:background="@drawable/design_bg_invite_friend_btn"
         android:text="Invite Friends"
-        android:textAllCaps="false"
-        />
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/btnneedhelp"
@@ -321,12 +297,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/imgbottomnavsearch"
         android:layout_margin="@dimen/dp_16"
-        android:background="@drawable/design_bg_edi_text_signupform"
+        android:background="@drawable/design_bg_needhelp_btn"
         android:text="Need help ?"
-        android:textAllCaps="false"
-        />
-
-
+        android:textAllCaps="false" />
 
 
     <ImageView
@@ -335,8 +308,7 @@
         android:src="@drawable/ic_bottom_nav_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown"
-        />
+        app:layout_constraintEnd_toStartOf="@id/imgbottomnavcrown" />
 
     <ImageView
         android:id="@+id/imgbottomnavcrown"
@@ -361,8 +333,7 @@
         app:layout_constraintEnd_toStartOf="@id/imgbottomnavuser"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/imgbottomnavchat"
-        app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintHorizontal_bias="0.91" />
 
     <ImageView
         android:id="@+id/imgbottomnavuser"
@@ -370,8 +341,7 @@
         android:src="@drawable/ic_bottom_nav_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.91"
-        />
+        app:layout_constraintHorizontal_bias="0.91" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
