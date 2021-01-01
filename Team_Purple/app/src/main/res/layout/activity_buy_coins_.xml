@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buy_coins_Activity">
+
+    <TextView
+        android:id="@+id/tv_buy_coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_buy_coins"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_20"
+        android:padding="@dimen/dp_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_getpremium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/get_premium_get_15_discount"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/sp_15"
+        android:padding="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/orange_bag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_circle"
+        android:gravity="center"
+        android:padding="@dimen/dp_20"
+        android:text="@string/tv_15"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_05"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_getpremium"
+
+        app:layout_constraintStart_toStartOf="@+id/tv_getpremium" />
+
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"/>
+    <ImageButton
+        android:id="@+id/btn_buy_coin_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_buy_coin_menu_bar"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:paddingEnd="@dimen/dp_20"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/first_constrain_layout"
+        android:padding="@dimen/dp_10"
+        android:background="@drawable/yellow_rectangle"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/tv_buy_coin">
+
+
+        <TextView
+            android:id="@+id/tv_0_coins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/dp_10"
+            android:text="@string/tv_0_coin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_unlock_feature_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_unlock_feature_string"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_0_coins" />
+
+        <ImageView
+            android:id="@+id/image_coin"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_60"
+            app:layout_constraintEnd_toStartOf="@+id/tv_0_coins"
+            app:layout_constraintStart_toStartOf="@id/first_constrain_layout"
+            app:layout_constraintTop_toTopOf="@+id/tv_0_coins"
+            android:src="@drawable/ic_straight_coin"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_earn_free_coin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:background="@drawable/green_rectangle"
+            android:drawablePadding="@dimen/dp_10"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_0_coins"
+            app:layout_constraintTop_toTopOf="@+id/tv_0_coins"
+            app:drawableLeftCompat="@drawable/ic_baseline_missed_video_call_24" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/second_constraint_layout"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:background="@drawable/yellow_round"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/first_constrain_layout"
+        >
+
+        <TextView
+            android:id="@+id/tv_500coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_500_coin"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="@id/tv_280_coin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_280_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_rs_280_00"
+            android:layout_marginStart="@dimen/dp_20"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@id/tv_buy_now1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_500coin" />
+
+        <TextView
+            android:id="@+id/tv_buy_now1"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:layout_marginStart="@dimen/dp_20"
+            android:background="@drawable/yellow_rectangle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_280_coin" />
+
+        <ImageView
+            android:id="@+id/image_flate_coin1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_05"
+            android:layout_marginStart="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+
+        <ImageView
+            android:id="@+id/image_flatecoin2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+        <TextView
+            android:id="@+id/tv_2000coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_2000_coin"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin2"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin2"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_1100.00coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_rs_1100_00"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin2"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin2"
+            app:layout_constraintTop_toBottomOf="@id/tv_2000coin"
+            />
+        <TextView
+            android:id="@+id/tv_buy_now2"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:background="@drawable/yellow_rectangle"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin2"
+            app:layout_constraintTop_toBottomOf="@id/tv_1100.00coin"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/image_flatecoin3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_flatecoin2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+        <TextView
+            android:id="@+id/tv_5000coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_5000_coin"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="80dp"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin3"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_2200.00coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_rs_2200_00"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin3"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin3"
+            app:layout_constraintTop_toBottomOf="@id/tv_2000coin"
+            />
+
+        <TextView
+            android:id="@+id/tv_buy_now3"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textColor="@color/white"
+            android:background="@drawable/yellow_rectangle"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin3"
+            app:layout_constraintTop_toBottomOf="@id/tv_2200.00coin"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_round"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@+id/second_constraint_layout">
+
+        <TextView
+            android:id="@+id/tv_8500coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="80dp"
+            android:text="@string/tv_8500_coin"
+            android:textColor="@color/yellow"
+            app:layout_constraintEnd_toEndOf="@id/image_flate_coin4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_3550_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_20"
+            android:gravity="center"
+            android:text="@string/tv_rs_3550_00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/tv_buy_now4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_8500coin" />
+
+        <TextView
+            android:id="@+id/tv_buy_now4"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/yellow_rectangle"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_3550_coin" />
+
+        <ImageView
+            android:id="@+id/image_flate_coin4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+
+        <ImageView
+            android:id="@+id/image_flatecoin5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+
+        <TextView
+            android:id="@+id/tv_12500coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/tv_12500_coin"
+            android:textColor="@color/yellow"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin5"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_4900.00coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_rs_4900_00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin5"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin5"
+            app:layout_constraintTop_toBottomOf="@id/tv_12500coin" />
+
+        <TextView
+            android:id="@+id/tv_buy_now5"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/yellow_rectangle"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin5"
+            app:layout_constraintTop_toBottomOf="@id/tv_4900.00coin" />
+
+
+        <ImageView
+            android:id="@+id/image_flatecoin6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/dp_05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_flatecoin5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_flate_coin" />
+
+        <TextView
+            android:id="@+id/tv_35000coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="@string/tv_35000_coin"
+            android:textColor="@color/yellow"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin6"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_11000.00coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tv_rs_11000_00"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/image_flatecoin6"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin6"
+            app:layout_constraintTop_toBottomOf="@id/tv_35000coin" />
+
+        <TextView
+            android:id="@+id/tv_buy_now6"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/yellow_rectangle"
+            android:gravity="center"
+            android:text="@string/tv_buy_now"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@id/image_flatecoin6"
+            app:layout_constraintTop_toBottomOf="@id/tv_11000.00coin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
