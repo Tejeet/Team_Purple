@@ -6,17 +6,10 @@ This project is a part of Unit Evaluation and Curriculam part of masai School.
 
 We are cloning this app [Meetly](https://play.google.com/store/apps/details?id=com.improverllc.meetly&hl=en_IN&gl=US) Checkout Here
 
-App Type | #Original App | #Cloned App
---- | --- | --- 
-Sample Demo | ![Original Meetly](example/originalsm.gif) | ![Cloned Meetly](example/clonedsm.gif)
+Original App | #Cloned App
+ --- | --- 
+ ![Original Meetly](example/originalsm.gif) | ![Cloned Meetly](example/clonedsm.gif)
 
-- Original App
-
-![Original Meetly](example/originalsm.gif)
-
-- Cloned App
-
-![Cloned Meetly](example/clonedsm.gif)
 
 This Project is made in Java Language with Android Studio IDE. We have used the core language and some third party dependency as mentioned below
 Dependency Used 
