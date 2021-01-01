@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity {
         mProfileName = findViewById(R.id.tvprofilename);
         mProfileDistance = findViewById(R.id.tvprofiledistance);
 
+        mRadar = findViewById(R.id.llradarscan);
+        mSwipeView = findViewById(R.id.swipecard);
+
 
         arraylist.add(new SuggestedProfileData(R.drawable.profile_1, "Snehal", "23", 10));
         arraylist.add(new SuggestedProfileData(R.drawable.profile_2, "Tanvee", "26", 90));
@@ -101,6 +104,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        mSwipeView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                SuggestedProfileData spd = (SuggestedProfileData) arraylist.get((int) ((Math.random() * (arraylist.size() - 0)) + 0));
+                Log.d(TAG, "name is "+spd.getName());
+                mProfilePhoto.setImageResource(spd.getMpath());
+                mProfileDistance.setText(spd.getDistance()+" Km");
+                mProfileName.setText(spd.getName()+"  ,  "+spd.getAge());
+            }
+        });
+
         mDisLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,8 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        mRadar = findViewById(R.id.llradarscan);
-        mSwipeView = findViewById(R.id.swipecard);
+
 
 
         mSwipeView.setVisibility(View.GONE);
