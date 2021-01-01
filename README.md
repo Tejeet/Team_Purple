@@ -1,5 +1,5 @@
 # Team_Purple
-We are cloning the Meetly app ![Meetly App](https://tejeet.com/shared/meetlyclone/logo.png)
+We are cloning the Meetly app ![Meetly App](https://tejeet.com/shared/meetlyclone/logo.png =150x)
 
 Team Members 
 - Tejeet Magar
@@ -12,8 +12,8 @@ We are cloning this app [Meetly](https://play.google.com/store/apps/details?id=c
 
 - Original App
 
-![Farmers Market Finder Demo](example/originalapp.gif)
+![Farmers Market Finder Demo](example/originalappsm.gif)
 
 - Cloned App
 
-![Farmers Market Finder Demo](example/cloneapp.gif)
+![Farmers Market Finder Demo](example/cloneappsm.gif)
