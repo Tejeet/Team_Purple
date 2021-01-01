@@ -11,7 +11,7 @@ Original App | #Cloned App
  ![Original Meetly](example/originalsm.gif) | ![Cloned Meetly](example/clonedsm.gif)
 
 
-This Project is made in Java Language with Android Studio IDE. We have used the core language and some third party dependency as mentioned below
+This Project is made in Java Language with Android Studio IDE. We have used the core Java and some third party dependency as mentioned below
 Dependency Used 
 - [Circular View](https://github.com/hdodenhof/CircleImageView) 
 - [Lottie Animation View](https://github.com/airbnb/lottie-android)
