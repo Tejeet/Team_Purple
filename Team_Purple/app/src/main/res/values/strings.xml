@@ -117,6 +117,24 @@ Contact Us
 
 If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at hotmeetdating@gmail.com.
     </string>
-
+    <string name="get_premium_get_15_discount">Get Premium Get 15% Discount</string>
+    <string name="tv_15">15%</string>
+    <string name="tv_500_coin">500 coin</string>
+    <string name="tv_rs_280_00">Rs 280.00</string>
+    <string name="tv_buy_now">Buy Now</string>
+    <string name="tv_2000_coin">2000 coin</string>
+    <string name="tv_rs_1100_00">Rs 1100.00</string>
+    <string name="tv_5000_coin">5000 coin</string>
+    <string name="tv_rs_2200_00">Rs 2200.00</string>
+    <string name="tv_8500_coin">8500 coin</string>
+    <string name="tv_rs_3550_00">Rs 3550.00</string>
+    <string name="tv_12500_coin">12500 coin</string>
+    <string name="tv_rs_4900_00">Rs 4900.00</string>
+    <string name="tv_35000_coin">35000 coin</string>
+    <string name="tv_rs_11000_00">Rs 11000.00</string>
+    <string name="tv_buy_coins">Buy Coins</string>
+    <string name="tv_earn_free_coin">EARN FREE COINS</string>
+    <string name="tv_0_coin">0 Coins</string>
+    <string name="tv_unlock_feature_string">Coins unlock feature like extra begels and the ability to view mutual friend</string>
 
 </resources>
