@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mRegister = findViewById(R.id.tvRegister);
         mFacebook = findViewById(R.id.btnFacebooklogin);
-        mLogin = findViewById(R.id.tvLoginbutton);
+        mLogin = findViewById(R.id.btnLoginbutton);
 
         mRegister.setOnClickListener(new View.OnClickListener() {
             @Override

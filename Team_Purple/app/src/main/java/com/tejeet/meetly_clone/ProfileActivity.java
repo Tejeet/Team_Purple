@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class ProfileActivity extends AppCompatActivity {
 
-    private ImageView mSearchNav, mPromotionalNav, mHotmeetNav, mChatNav, mUserNav;
+    private ImageView mSearchNav, mPromotionalNav, mHotmeetNav, mChatNav, mUserNav, mSetting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,8 @@ public class ProfileActivity extends AppCompatActivity {
         mHotmeetNav = findViewById(R.id.imgbottomnavchat);
         mChatNav = findViewById(R.id.imgbottomnavshare);
         mUserNav = findViewById(R.id.imgbottomnavuser);
+
+        mSetting = findViewById(R.id.imgSetting);
 
 
         mSearchNav.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +53,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        mSetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoSetting();
+            }
+        });
+
 
 
     }
@@ -72,6 +81,12 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void gotochat() {
         startActivity(new Intent(ProfileActivity.this, ChatActivity.class));
+        finish();
+    }
+
+
+    public void gotoSetting() {
+        startActivity(new Intent(ProfileActivity.this, SettingActivity.class));
         finish();
     }
 

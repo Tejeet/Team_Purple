@@ -72,7 +72,7 @@
 
 
     <Button
-        android:id="@+id/tvLoginbutton"
+        android:id="@+id/btnLoginbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/dp_30"
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
-        android:id="@+id/forget"
+        android:id="@+id/tvforgetpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_10"
@@ -96,7 +96,10 @@
         android:textAllCaps="true"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tvRegisterbutton" />
+        app:layout_goneMarginTop="@dimen/dp_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLoginbutton"/>
 
 
     <Button

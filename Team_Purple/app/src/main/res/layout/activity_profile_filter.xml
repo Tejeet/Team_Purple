@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgback"
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/dp_20"
         android:layout_marginLeft="@dimen/dp_20"
@@ -63,7 +63,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Natepute,Maharashtra,India"
+                android:text="Pune,Maharashtra,India"
                 android:textColor="@color/black"
                 android:paddingBottom="@dimen/dp_10"
                 android:textSize="@dimen/sp_20" />
@@ -99,6 +99,7 @@
         android:layout_marginLeft="@dimen/dp_30"
         android:layout_marginRight="@dimen/dp_30"
         android:max="200"
+        android:outlineSpotShadowColor="@color/primary"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDistanceMeter" />
 

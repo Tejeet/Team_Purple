@@ -19,7 +19,7 @@
         android:id="@+id/imgprofilephoto"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/profile_1"
+        android:src="@drawable/profile_user"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

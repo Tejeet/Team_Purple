@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/launcher_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Meetly_Clone">
-        <activity android:name=".Buy_coins_Activity"></activity>
+        <activity android:name=".Buy_coins_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
         <activity
             android:name=".ChatActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
