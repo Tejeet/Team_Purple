@@ -12,8 +12,8 @@ We are cloning this app [Meetly](https://play.google.com/store/apps/details?id=c
 
 - Original App
 
-![Farmers Market Finder Demo](example/originalappsm.gif)
+![Farmers Market Finder Demo](example/originalsm.gif)
 
 - Cloned App
 
-![Farmers Market Finder Demo](example/cloneappsm.gif)
+![Farmers Market Finder Demo](example/clonedsm.gif)
