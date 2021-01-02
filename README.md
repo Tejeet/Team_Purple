@@ -14,7 +14,6 @@ Original App | #Cloned App
 This Project is made in Java Language with Android Studio IDE. We have used the core Java and some third party dependency as mentioned below
 Dependency Used 
 - [Circular View](https://github.com/hdodenhof/CircleImageView) 
-- [Lottie Animation View](https://github.com/airbnb/lottie-android)
 - [icons Used](https://www.flaticon.com/)
 - All Random images available on Internet ( if any Images and Icon is not credited please email me and i will make sure to give you credit thank you :) Email tejeetm@gmail.com )
 
